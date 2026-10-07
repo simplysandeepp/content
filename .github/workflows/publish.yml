@@ -1,0 +1,52 @@
+name: Publish content
+
+# Every push to main: validate the content, then tell every portfolio
+# template to rebuild so the change goes live everywhere at once.
+#
+# Templates are registered in the VERCEL_DEPLOY_HOOKS secret — one Vercel
+# Deploy Hook URL per line. Adding a new template = add its hook URL there.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: publish
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install validator deps
+        run: npm install --no-save --no-audit --no-fund front-matter
+
+      - name: Validate content
+        run: node scripts/validate.mjs
+
+      - name: Rebuild every template
+        env:
+          HOOKS: ${{ secrets.VERCEL_DEPLOY_HOOKS }}
+        run: |
+          if [[ -z "$HOOKS" ]]; then
+            echo "::warning::VERCEL_DEPLOY_HOOKS is not set — nothing to rebuild."
+            exit 0
+          fi
+          status=0
+          while IFS= read -r hook; do
+            [[ -z "$hook" ]] && continue
+            if curl -fsS -X POST "$hook" > /dev/null; then
+              echo "triggered ${hook%%/prj_*}/…"
+            else
+              echo "::error::a deploy hook failed"; status=1
+            fi
+          done <<< "$HOOKS"
+          exit $status

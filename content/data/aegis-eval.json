@@ -1,0 +1,193 @@
+{
+  "_comment": "Generated from the Aegis harness run recorded in its own results database. Every value is reproduced from a stored harness artifact; none is estimated. Regenerate by re-reading the run named in `run.id`.",
+  "run": {
+    "id": "run-2026-09-09T08-43-32-335Z-354015bd",
+    "harnessVersion": "1.0.0",
+    "startedAt": "2026-09-09T08:43:32.385Z",
+    "gitSha": "53637e633539d3a730fa61a3bfb21d95b693a581",
+    "corpusHash": "c0c4962d87065855",
+    "argv": "npm run harness -- --mock --quiet --policy permissive,balanced,strict --repeat 2",
+    "provider": "mock/deterministic",
+    "mock": true,
+    "caseRuns": 762,
+    "source": "aegis/.data/aegis.db -> results (run_id=run-2026-09-09T08-43-32-335Z-354015bd) / runs.meta"
+  },
+  "corpus": {
+    "cases": 127,
+    "attacks": 83,
+    "benign": 44,
+    "attackFamilies": 12,
+    "benignFamilies": 5,
+    "source": "aegis/corpus/attacks.yaml (83 cases, 12 families) + aegis/corpus/benign.yaml (44 cases, 5 families)"
+  },
+  "headline": {
+    "policy": "balanced",
+    "note": "The shipped default policy. ASR is judged by whether the model complied with the attack, not by whether the guard blocked.",
+    "source": "aegis/.data/aegis.db -> results (run_id=run-2026-09-09T08-43-32-335Z-354015bd), policy_name='balanced'",
+    "asrPct": 0.0,
+    "fprPct": 11.36,
+    "catchRatePct": 63.25,
+    "escalationRatePct": 27.56
+  },
+  "policies": [
+    {
+      "policy": "permissive",
+      "caseRuns": 254,
+      "attackRuns": 166,
+      "benignRuns": 88,
+      "asrPct": 12.65,
+      "fprPct": 2.27,
+      "catchRatePct": 38.55,
+      "escalationRatePct": 24.8
+    },
+    {
+      "policy": "balanced",
+      "caseRuns": 254,
+      "attackRuns": 166,
+      "benignRuns": 88,
+      "asrPct": 0.0,
+      "fprPct": 11.36,
+      "catchRatePct": 63.25,
+      "escalationRatePct": 27.56
+    },
+    {
+      "policy": "strict",
+      "caseRuns": 254,
+      "attackRuns": 166,
+      "benignRuns": 88,
+      "asrPct": 0.0,
+      "fprPct": 22.73,
+      "catchRatePct": 71.69,
+      "escalationRatePct": 13.39
+    }
+  ],
+  "policiesSource": "aegis/.data/aegis.db -> results (run_id=run-2026-09-09T08-43-32-335Z-354015bd) grouped by policy_name",
+  "attackFamilies": [
+    {
+      "family": "exfiltration-markdown",
+      "cases": 7,
+      "runs": 14,
+      "catchRatePct": 92.86,
+      "asrPct": 0.0
+    },
+    {
+      "family": "role-hijack",
+      "cases": 10,
+      "runs": 20,
+      "catchRatePct": 90.0,
+      "asrPct": 0.0
+    },
+    {
+      "family": "refusal-suppression",
+      "cases": 6,
+      "runs": 12,
+      "catchRatePct": 83.33,
+      "asrPct": 0.0
+    },
+    {
+      "family": "tool-poisoning",
+      "cases": 6,
+      "runs": 12,
+      "catchRatePct": 83.33,
+      "asrPct": 0.0
+    },
+    {
+      "family": "delimiter-injection",
+      "cases": 4,
+      "runs": 8,
+      "catchRatePct": 75.0,
+      "asrPct": 0.0
+    },
+    {
+      "family": "instruction-override",
+      "cases": 10,
+      "runs": 20,
+      "catchRatePct": 70.0,
+      "asrPct": 0.0
+    },
+    {
+      "family": "prompt-extraction",
+      "cases": 9,
+      "runs": 18,
+      "catchRatePct": 66.67,
+      "asrPct": 0.0
+    },
+    {
+      "family": "indirect-injection",
+      "cases": 8,
+      "runs": 16,
+      "catchRatePct": 62.5,
+      "asrPct": 0.0
+    },
+    {
+      "family": "encoding-smuggling",
+      "cases": 8,
+      "runs": 16,
+      "catchRatePct": 37.5,
+      "asrPct": 0.0
+    },
+    {
+      "family": "multi-turn-crescendo",
+      "cases": 5,
+      "runs": 10,
+      "catchRatePct": 20.0,
+      "asrPct": 0.0
+    },
+    {
+      "family": "pii-elicitation",
+      "cases": 5,
+      "runs": 10,
+      "catchRatePct": 20.0,
+      "asrPct": 0.0
+    },
+    {
+      "family": "secret-elicitation",
+      "cases": 5,
+      "runs": 10,
+      "catchRatePct": 20.0,
+      "asrPct": 0.0
+    }
+  ],
+  "attackFamiliesSource": "aegis/.data/aegis.db -> results (run_id=run-2026-09-09T08-43-32-335Z-354015bd), policy_name='balanced', expect='block', grouped by family",
+  "benignFamilies": [
+    {
+      "family": "analysis",
+      "cases": 7,
+      "runs": 14,
+      "fprPct": 57.14
+    },
+    {
+      "family": "code",
+      "cases": 9,
+      "runs": 18,
+      "fprPct": 0.0
+    },
+    {
+      "family": "ordinary-task",
+      "cases": 12,
+      "runs": 24,
+      "fprPct": 0.0
+    },
+    {
+      "family": "own-pii",
+      "cases": 6,
+      "runs": 12,
+      "fprPct": 0.0
+    },
+    {
+      "family": "security-question",
+      "cases": 10,
+      "runs": 20,
+      "fprPct": 10.0
+    }
+  ],
+  "benignFamiliesSource": "aegis/.data/aegis.db -> results (run_id=run-2026-09-09T08-43-32-335Z-354015bd), policy_name='balanced', expect='allow', grouped by family",
+  "efficiency": {
+    "escalationRatePct": 21.92,
+    "judgeTokenSavingPct": 78.08,
+    "judgeTokens": 78818,
+    "alwaysLlmTokensEstimate": 359637,
+    "note": "Run-wide, across all three policies.",
+    "source": "aegis/.data/aegis.db -> runs.scores (run_id=run-2026-09-09T08-43-32-335Z-354015bd)"
+  }
+}

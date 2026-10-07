@@ -1,0 +1,187 @@
+%-------------------------
+% Resume in LaTeX
+% Author : Sandeep Prajapati
+% Based off of: https://github.com/sb2nov/resume and Jake's Resume template
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+
+
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.6in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section heading: consistent spacing above and below every section
+\titleformat{\section}{
+  \scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule]
+\titlespacing{\section}{0pt}{6pt}{3pt}
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands — all vertical spacing lives here, nowhere else
+\newcommand{\resumeItem}[1]{
+  \item\small{#1}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \small #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \small #2 \\
+    \end{tabular*}\vspace{-2pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, itemsep=1pt, parsep=0pt, topsep=0pt, partopsep=0pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=0pt, parsep=0pt, topsep=1pt, partopsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Sandeep Prajapati} \\ \vspace{4pt}
+    \small +91 9643609607 $|$
+    \href{mailto:sandeepprajapati1202@gmail.com}{\underline{sandeepprajapati1202@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/simplysandeepp}{\underline{LinkedIn}} $|$
+    \href{https://github.com/simplysandeepp}{\underline{GitHub}} $|$
+    \href{https://www.leetcode.com/u/simplysandeepp}{\underline{LeetCode}} $|$
+    \href{https://www.sandeepp.in}{\underline{sandeepp.in}}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+\small Final-year Computer Science undergraduate and Software Engineering Intern at DrCode, with a strong foundation in Data Structures and Algorithms and hands-on experience building full-stack and AI-powered products.
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Galgotias University}{Greater Noida, India}
+      {B.Tech in Computer Science Engineering, GPA: 8.02}{Sep 2023 -- June 2027}
+    \resumeSubheading
+      {Doon Bharti Public School (XII), D.A.V Public School (X), CBSE}{Faridabad, India}
+      {PCM: 74\% $|$ Secondary: 82\%}{2021 -- 2023}
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt, parsep=0pt, topsep=0pt]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, TypeScript, JavaScript, SQL} \\
+     \textbf{Frameworks \& Tools}{: Next.js, React.js, Node.js, FastAPI, Tailwind CSS, MongoDB, PostgreSQL, Drizzle ORM, Firebase, Supabase, AWS (S3, RDS, Amplify), Docker, Git, Playwright, Tally, Resend, Netdata} \\
+     \textbf{AI / ML}{: RAG, LLM Integration (Groq, Gemini), Scikit-learn, PyTorch, TensorFlow, OpenCV, SHAP} \\
+     \textbf{Soft Skills}{: Problem Solving, Team Leadership, Communication}
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Software Engineering Intern, DrCode}{New Delhi, India}
+      {Full-Stack Development}{May 2026 -- Present}
+      \resumeItemListStart
+        \resumeItem{\textbf{Directorate of Revenue Intelligence, Delhi Headquarters — Onsite:} Diagnosed data-loss in a government passenger-manifest pipeline by tracing records across a 5-stage ingestion flow and fixed a broken automated file-fetch job; built SQL reporting workflows to audit arrival counts and processing latency into CSV/Excel data-quality reports.}
+        \resumeItem{Authored a phased server-monitoring rollout plan (Netdata, then Prometheus/Grafana) for an air-gapped on-prem fleet, and designed an SMTP-based real-time alerting system validated live in production across all zones.}
+        \resumeItem{\textbf{FFN Platform — Remote:} Redesigned the core data model into a unified 13-table PostgreSQL schema (Drizzle ORM), replacing 3 legacy tables, and safely migrated it across 4 environments on AWS RDS; managed AWS Amplify pipelines across dev/beta/prod with coordinated migration rollout.}
+        \resumeItem{Integrated Tally webhooks, Resend email, and AWS S3; wrote Playwright E2E tests for onboarding, catching 3 production-bound bugs including a subtle SQL bug missed by TypeScript/lint; built admin tooling for application review, duplicate detection, and audit history.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {AI Intern, Infosys Springboard}{Remote}
+      {Deep Learning / Computer Vision}{Aug 2025 -- Oct 2025}
+      \resumeItemListStart
+        \resumeItem{Built a CNN + U-Net model to detect oil spills in satellite images in real time and achieved \textbf{96\% accuracy} using Python, PyTorch, and OpenCV.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{NoLoop} $|$ \emph{Python, FastAPI, Next.js, Groq LLM, RAG, PostgreSQL} $|$ \href{https://claimheart.sandeepp.in}{\underline{Noloop.sandeepp.in}}}{2025}
+          \resumeItemListStart
+            \resumeItem{Built a medical insurance claims platform with a 4-agent AI pipeline that extracts data from scanned PDF invoices, validates against policy docs via RAG, detects fraud, and drafts approval or denial letters with policy page citations.}
+            \resumeItem{Used Isolation Forest anomaly detection with LLM reasoning to flag duplicate procedures, cost overages against CMS benchmarks, and unusual billing patterns.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Beacon, BRD Agent} $|$ \emph{Next.js 14, FastAPI, Python, Groq LLM, PostgreSQL, Firebase} $|$ \href{https://beacon.sandeepp.in/}{\underline{beacon.sandeepp.in}}}{2025}
+          \resumeItemListStart
+            \resumeItem{Built with a team of 4, an AI tool that auto-generates business requirement documents across 7 sections in parallel, with export to Markdown, HTML, and Word, Slack and Gmail integration, and role-based sharing.}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------HONORS AND AWARDS-----------
+\section{Honors and Awards}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\textbf{Hackathons and Competitions}}{2023 -- 2025}
+        \resumeItemListStart
+          \resumeItem{Top 6 Finalist at Vihaan 9.0 national hackathon among 2700+ participants at \textbf{DTU}.}
+          \resumeItem{Runner-Up at Buildathon (GDG Noida) and Finalist at Hackfest 2.0 (GDG New Delhi).}
+          \resumeItem{SIH Pre-Qualifier; participated in 10+ hackathons overall.}
+          \resumeItem{\href{https://codolio.com/profile/simplysandeepp}{\textbf{730+ DSA problems solved}} across different platforms.}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------VOLUNTEER EXPERIENCE-----------
+\section{Volunteer Experience}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\textbf{Google Student Ambassador} $|$ \emph{Technical Speaker}}{2025 -- 2026}
+        \resumeItemListStart
+          \resumeItem{Represented Google AI tools on campus and hosted sessions on Gemini API, NotebookLM, and Veo 3.}
+        \resumeItemListEnd
+    \resumeProjectHeading
+        {\textbf{Tech Lead, GDG on Campus} $|$ \emph{Mentor, Organizer}}{2025 -- 2026}
+        \resumeItemListStart
+          \resumeItem{Mentored 120+ students through Google Cloud Study Jam and organized the 30 hours hackathon - Techsprint'26.}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}

@@ -1,0 +1,15 @@
+{
+  "name": "port-content",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Single source of truth for every sandeepp.in portfolio template — projects, blog, experience, certifications, images, CV.",
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "compress-images": "node scripts/compress-project-images.mjs",
+    "localize-logos": "node scripts/localize-cert-logos.mjs"
+  },
+  "devDependencies": {
+    "front-matter": "^4.0.2",
+    "sharp": "^0.34.0"
+  }
+}
