@@ -1,0 +1,13 @@
+{
+  "_howto": "Copy to content/data/this-or-that.json, fill in your real picks, delete this line. 'pick' is 'a' or 'b'. 'note' is optional — one short line shown after a visitor answers.",
+  "pairs": [
+    { "a": "Chai", "b": "Coffee", "pick": "a", "note": "" },
+    { "a": "Early bird", "b": "Night owl", "pick": "b", "note": "" },
+    { "a": "Mountains", "b": "Beaches", "pick": "a", "note": "" },
+    { "a": "Tabs", "b": "Spaces", "pick": "b", "note": "" },
+    { "a": "Frontend", "b": "Backend", "pick": "b", "note": "" },
+    { "a": "Dark mode", "b": "Light mode", "pick": "a", "note": "" },
+    { "a": "Badminton", "b": "Cricket", "pick": "a", "note": "" },
+    { "a": "Ship it fast", "b": "Polish it first", "pick": "a", "note": "" }
+  ]
+}

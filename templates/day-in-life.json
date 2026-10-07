@@ -1,0 +1,9 @@
+{
+  "_howto": "Copy to content/data/day-in-life.json, replace every moment with your real day (4–7 moments), delete this line. 'time' is 24h HH:MM — it positions the sun/moon.",
+  "moments": [
+    { "time": "07:00", "emoji": "🌅", "title": "Morning", "text": "What your morning actually looks like." },
+    { "time": "10:00", "emoji": "💻", "title": "Work", "text": "What you work on during the day." },
+    { "time": "18:30", "emoji": "🏸", "title": "Evening", "text": "How you unwind." },
+    { "time": "22:00", "emoji": "🌙", "title": "Night", "text": "Side projects, reading, writing…" }
+  ]
+}

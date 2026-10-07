@@ -1,0 +1,31 @@
+{
+  "hobbies": [
+    {
+      "emoji": "⛰️",
+      "name": "Trekking",
+      "line": "Mountain trails are where I reset — long climbs, no notifications, a clear head on the way down."
+    },
+    {
+      "emoji": "🏍️",
+      "name": "Riding",
+      "line": "Long rides on open roads. Few things clear the mind like a good stretch of highway."
+    },
+    {
+      "emoji": "🏃",
+      "name": "Running",
+      "line": "Running is my thinking time — a lot of stubborn problems quietly untangle themselves mid-run."
+    },
+    {
+      "emoji": "🏸",
+      "name": "Badminton",
+      "line": "My favourite sport. Fast, tactical, and the best kind of competitive — always up for a game."
+    }
+  ],
+  "facts": [
+    "Off the keyboard, I'm usually on a trail — trekking in the mountains is how I reset.",
+    "Long rides clear my head better than any debugger.",
+    "Running is where I do my best thinking; plenty of design decisions get settled somewhere along the route.",
+    "Badminton is my sport of choice — fast, tactical, and genuinely competitive. Always happy to play.",
+    "Mountains, open roads, running and badminton have one thing in common with engineering: they reward showing up consistently."
+  ]
+}
