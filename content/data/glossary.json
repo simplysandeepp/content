@@ -63,5 +63,15 @@
   "Attention Gates": "Learned gates on a U-Net's skip connections that suppress irrelevant regions of the feature maps, helping the model focus on the target structure.",
   "SHAP": "SHapley Additive exPlanations — attributes a model's prediction to its input features using Shapley values from cooperative game theory.",
   "BLIP": "Bootstrapping Language-Image Pre-training — a family of vision-language models used for tasks such as image captioning and visual question answering.",
-  "DSA": "Data structures and algorithms — the core computer-science toolkit (arrays, trees, graphs, sorting, dynamic programming…) that technical interviews focus on."
+  "DSA": "Data structures and algorithms — the core computer-science toolkit (arrays, trees, graphs, sorting, dynamic programming…) that technical interviews focus on.",
+  "IndexedDB": "A transactional, key-value-and-index database built into the browser. It stores structured data on the device, works offline, and holds far more than localStorage.",
+  "service worker": "A script the browser runs separately from the page. It can intercept network requests and serve cached responses, which is what makes a web app load offline.",
+  "Workbox": "Google's library for building service workers. It generates the list of files to precache and handles caching strategies and versioned updates.",
+  "local-first": "A design where the data lives on the user's device and the app works fully offline. Syncing or backup is optional rather than required.",
+  "File System Access API": "A browser API that lets a web app, with the user's permission, read and write files and folders they pick. Support varies by browser and platform, so it has to be feature-detected.",
+  "WCAG": "Web Content Accessibility Guidelines — the standard for accessible web content. Level AA requires, for example, a 4.5:1 contrast ratio for normal text.",
+  "axe-core": "An open-source accessibility testing engine. It scans rendered HTML for problems such as missing labels, bad roles and insufficient colour contrast.",
+  "double progression": "A strength-training rule: keep the load fixed while reps rise within a target range, and add a small amount of weight only once every set reaches the top of that range.",
+  "Epley formula": "An estimate of a one-rep maximum from a lighter, multi-rep set: weight × (1 + reps ÷ 30). It is a guide for tracking progress, and less reliable above about twelve reps.",
+  "acute:chronic": "A training-load ratio comparing recent work (the last 7 days) with the average of the previous few weeks. A sharp rise above 1 means load is climbing faster than the body has adapted to."
 }
