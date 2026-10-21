@@ -1,0 +1,6 @@
+{
+  "slug": "gen-ai",
+  "title": "Generative AI",
+  "description": "Mid-semester practice notes — generative vs discriminative models, VAEs, GANs and their variants, diffusion models, and Transformers — explained simply, with flow diagrams, formulae, and worked examples.",
+  "tone": "violet"
+}
