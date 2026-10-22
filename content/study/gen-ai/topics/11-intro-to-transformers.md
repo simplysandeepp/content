@@ -2,6 +2,7 @@
 title: "Introduction to Transformers – Motivation for Generative AI"
 order: 11
 tagline: "Why generative AI gave up on recurrence and bet everything on attention"
+definition: "Transformers replaced recurrent networks for sequence modelling because self-attention lets every token look directly at every other token in one parallel step, instead of passing information sequentially through hidden states."
 tags: ["Transformers", "Self-Attention", "RNN", "LSTM"]
 ---
 

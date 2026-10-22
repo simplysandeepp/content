@@ -2,6 +2,7 @@
 title: "StyleGAN & Modern GAN Variants"
 order: 8
 tagline: "Separating 'what to generate' from 'how to control it' via a mapping network and per-layer style injection"
+definition: "StyleGAN replaces a single latent vector with a learned mapping network and injects \"style\" at every resolution of the Generator via AdaIN, so coarse features like pose and fine features like texture can be controlled independently."
 tags: ["StyleGAN", "GAN Variants", "Latent Space", "AdaIN"]
 diagram:
   direction: LR

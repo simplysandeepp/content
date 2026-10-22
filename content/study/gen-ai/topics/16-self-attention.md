@@ -2,6 +2,7 @@
 title: "Self-Attention – Concept, Step-by-Step Example, and Hands-on Visualization"
 order: 16
 tagline: "Every token looks at every other token and mixes their values by relevance"
+definition: "Self-attention computes a Query, Key, and Value vector for every token, then lets each token's output be a weighted blend of all tokens' Values — the weights set by how well its Query matches every Key."
 tags: ["Self-Attention", "Transformers", "QKV"]
 ---
 

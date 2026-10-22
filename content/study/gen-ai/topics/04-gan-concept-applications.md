@@ -2,6 +2,7 @@
 title: "Generative Adversarial Networks (GAN) – Concept and Applications"
 order: 4
 tagline: "Two networks locked in a game — one forging fakes, one hunting them down — until the fakes win"
+definition: "A Generative Adversarial Network pits a Generator, which turns random noise into fake samples, against a Discriminator, which tries to tell real from fake — trained together until the Generator's fakes are indistinguishable from real data."
 tags: ["GAN", "Adversarial Training", "Minimax"]
 diagram:
   direction: LR

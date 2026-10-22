@@ -2,6 +2,7 @@
 title: "Retrieval-Augmented Generation (RAG) – Architecture and Applications"
 order: 15
 tagline: "Grounding generation in retrieved documents instead of relying only on frozen model weights"
+definition: "Retrieval-Augmented Generation looks up relevant text chunks from an external knowledge store at query time and feeds them into the model's prompt, grounding its answer in real retrieved evidence instead of only its frozen training memory."
 tags: ["RAG", "Retrieval", "Vector Search"]
 diagram:
   direction: LR

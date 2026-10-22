@@ -2,6 +2,7 @@
 title: "Variational Autoencoders (VAE) – Concept, Architecture, and Loss"
 order: 3
 tagline: "A probabilistic autoencoder that learns a smooth latent space you can actually sample from"
+definition: "A Variational Autoencoder is an autoencoder whose encoder outputs a probability distribution over the latent space instead of a single point, trained to both reconstruct its input and keep that distribution close to a standard normal, so new points sampled from it decode into realistic outputs."
 tags: ["VAE", "Latent Space", "ELBO"]
 diagram:
   direction: LR

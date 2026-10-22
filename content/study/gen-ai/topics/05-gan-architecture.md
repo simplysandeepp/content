@@ -2,6 +2,7 @@
 title: "GAN Architecture"
 order: 5
 tagline: "Inside the Generator and Discriminator networks, layer by layer, for one training iteration"
+definition: "The Generator is an upsampling network that maps a latent noise vector to a full-sized sample, and the Discriminator is a downsampling classifier that outputs the probability its input is real."
 tags: ["GAN", "Architecture", "Neural Networks"]
 diagram:
   direction: LR

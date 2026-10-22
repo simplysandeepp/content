@@ -2,6 +2,7 @@
 title: "Generative vs Discriminative Models"
 order: 2
 tagline: "Learning the joint distribution P(x,y) versus learning the decision boundary P(y|x) directly"
+definition: "A generative model learns the joint distribution P(x,y) and can generate new data; a discriminative model learns P(y|x) directly to separate classes, without modeling how the data itself was produced."
 tags: ["Fundamentals", "Bayes", "Classification"]
 ---
 

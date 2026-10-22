@@ -2,6 +2,7 @@
 title: "Transformer Training and Scaling Challenges"
 order: 21
 tagline: "Quadratic attention cost, huge compute needs, and fragile optimization at scale — and how to manage them"
+definition: "Training large Transformers is expensive because self-attention cost grows quadratically with sequence length, which is why techniques like mixed-precision training, gradient checkpointing, and efficient attention variants matter at scale."
 tags: ["Transformer Training", "Scaling Laws", "Optimization"]
 ---
 

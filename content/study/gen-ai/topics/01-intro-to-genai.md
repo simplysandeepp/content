@@ -2,6 +2,7 @@
 title: "Introduction to Generative AI – Use Cases and Types"
 order: 1
 tagline: "What generative AI actually does, the main model families, and where it's used in the real world"
+definition: "Generative AI models learn the underlying data distribution so they can produce new, original samples — images, text, audio — rather than just classify or score existing ones."
 tags: ["Fundamentals", "Use Cases", "Model Families"]
 ---
 

@@ -2,6 +2,7 @@
 title: "Multi-Head Attention"
 order: 17
 tagline: "Several smaller attentions run in parallel so the model can learn different kinds of relationships at once"
+definition: "Multi-head attention runs several smaller self-attention operations in parallel, each with its own learned projections, so different heads can specialise in different kinds of relationships between tokens."
 tags: ["Multi-Head Attention", "Transformers"]
 ---
 

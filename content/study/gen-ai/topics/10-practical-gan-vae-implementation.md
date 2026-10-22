@@ -2,6 +2,7 @@
 title: "Practical Hands-on: GAN or VAE Implementation"
 order: 10
 tagline: "What the training loop actually looks like, and the three bugs that bite everyone once"
+definition: "Implementing a GAN or VAE in PyTorch means defining the two (or encoder/decoder) networks, picking matching activation functions and loss terms, and training carefully — detaching the Generator's output before the Discriminator's step, and watching loss curves and sample grids rather than a single metric."
 tags: ["PyTorch", "GAN", "VAE", "Implementation"]
 ---
 

@@ -2,6 +2,7 @@
 title: "Decoder Architecture"
 order: 19
 tagline: "Masked self-attention, cross-attention, and feed-forward, stacked and repeated one token at a time"
+definition: "A Transformer decoder block adds a causally-masked self-attention layer, so a token can only attend to earlier tokens, plus a cross-attention layer that lets it look at the encoder's output, before its own feed-forward sublayer."
 tags: ["Decoder", "Transformers", "Masked Self-Attention"]
 diagram:
   direction: TB

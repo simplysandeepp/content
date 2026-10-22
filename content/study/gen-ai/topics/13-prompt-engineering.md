@@ -2,6 +2,7 @@
 title: "Prompt Engineering – Zero-shot, One-shot, Few-shot & Chain-of-Thought Prompting"
 order: 13
 tagline: "Same task, four prompts — how much example and reasoning scaffolding you give changes everything"
+definition: "Prompt engineering shapes a model's output by how a request is phrased — from zero-shot (no examples) through few-shot (a handful of examples) to chain-of-thought (asking the model to reason step by step) — without changing any model weights."
 tags: ["Prompt Engineering", "Few-shot Learning", "Chain-of-Thought", "LLMs"]
 ---
 

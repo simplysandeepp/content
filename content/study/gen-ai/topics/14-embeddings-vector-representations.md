@@ -2,6 +2,7 @@
 title: "Embeddings and Vector Representations for LLMs"
 order: 14
 tagline: "Turning words into points in space so 'similar meaning' becomes 'nearby vectors'"
+definition: "An embedding is a dense vector representation of a token or piece of text, placed so that semantically similar items sit close together in vector space, measured by metrics like cosine similarity."
 tags: ["Embeddings", "Vector Representations", "Cosine Similarity", "RAG"]
 ---
 

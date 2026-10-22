@@ -2,6 +2,7 @@
 title: "GAN Training Challenges and Loss Functions"
 order: 6
 tagline: "Why GANs are hard to train, and the practical tricks that keep them from falling apart"
+definition: "GANs are trained via a minimax game between Generator and Discriminator, which is why they're prone to mode collapse, vanishing gradients, and unstable loss curves — problems tackled with techniques like non-saturating loss and alternative objectives such as WGAN."
 tags: ["GAN", "Training", "Mode Collapse", "Loss Functions"]
 ---
 

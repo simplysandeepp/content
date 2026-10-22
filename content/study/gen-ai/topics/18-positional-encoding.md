@@ -2,6 +2,7 @@
 title: "Positional Encoding"
 order: 18
 tagline: "Injecting order back into a mechanism that only sees content, not sequence position"
+definition: "Because self-attention has no built-in sense of order, positional encoding adds a unique sinusoidal (or learned) signal to each token's embedding based on its position in the sequence."
 tags: ["Positional Encoding", "Transformers", "Sinusoidal"]
 ---
 

@@ -2,6 +2,7 @@
 title: "Diffusion Models (DDPM, Stable Diffusion) – Overview and Applications"
 order: 9
 tagline: "Learn to destroy an image with noise, then learn to undo it one step at a time"
+definition: "A diffusion model learns to reverse a fixed process that gradually adds Gaussian noise to data, training a network to predict and remove that noise one step at a time until pure noise becomes a realistic sample."
 tags: ["Diffusion Models", "DDPM", "Stable Diffusion", "U-Net"]
 diagram:
   direction: LR

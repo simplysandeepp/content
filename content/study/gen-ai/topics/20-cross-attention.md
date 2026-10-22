@@ -2,6 +2,7 @@
 title: "Cross-attention"
 order: 20
 tagline: "Query from the decoder, key and value from the encoder — how the decoder reads the full input"
+definition: "Cross-attention lets a decoder's Queries attend to Keys and Values produced by the encoder, which is how a translation model's output tokens stay grounded in the original input sentence."
 tags: ["Cross-Attention", "Transformers", "Machine Translation"]
 ---
 

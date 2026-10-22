@@ -2,6 +2,7 @@
 title: "Conditional GAN and Applications"
 order: 7
 tagline: "Feeding a GAN a label so you can control exactly what it generates, instead of leaving it to chance"
+definition: "A cGAN feeds an extra conditioning signal — usually a class label — into both the Generator and Discriminator, so generation can be steered toward a specific category instead of being random."
 tags: ["GAN", "Conditional GAN", "Image-to-Image Translation"]
 diagram:
   direction: LR

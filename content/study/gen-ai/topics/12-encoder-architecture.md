@@ -2,6 +2,7 @@
 title: "Encoder Architecture"
 order: 12
 tagline: "Embed, attend, feed-forward, normalize — repeat N times"
+definition: "A Transformer encoder block stacks multi-head self-attention and a feed-forward network, each wrapped in a residual connection and layer normalization, to build a contextual representation of every input token."
 tags: ["Transformer", "Encoder", "Self-Attention", "Layer Norm"]
 diagram:
   direction: TB
